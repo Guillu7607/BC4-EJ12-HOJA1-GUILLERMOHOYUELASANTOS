@@ -6,7 +6,7 @@ public class Main {
     private static final String PASS = "ribera";
 
     public static void main(String[] args) {
-        String sql = "SELECT COUNT(*) AS total FROM empleado WHERE salaio > 3000";
+        String sql = "SELECT COUNT(*) AS total FROM empleado WHERE salario > 3000";
 
         try (Connection con = DriverManager.getConnection(URL, USER, PASS);
              Statement st = con.createStatement();
